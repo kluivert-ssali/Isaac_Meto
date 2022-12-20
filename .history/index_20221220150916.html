@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meto_Rise_collect</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div id="container" class="container">
+      <!-- FORM SECTION -->
+      <div class="row">
+        <!-- SIGN UP -->
+        <div class="col align-items-center flex-col sign-up">
+          <div class="form-wrapper align-items-center">
+            <div class="form sign-up">
+              <div class="input-group">
+                <i class="bx bxs-user"></i>
+                <input type="text" placeholder="Student Full Name" />
+              </div>
+              <div class="input-group">
+                <i class="bx bx-mail-send"></i>
+                <input type="email" placeholder="Email" />
+              </div>
+              <div class="input-group">
+                <i class="bx bxs-lock-alt"></i>
+                <input type="phone" placeholder="phone Number" />
+              </div>
+              <div class="input-group">
+                <i class="bx bxs-lock-alt"></i>
+                <input type="text" placeholder="City" />
+              </div>
+
+              <button>Send to Database</button>
+              <p>
+                <span> Already have an account? </span>
+                <b onclick="toggle()" class="pointer"> Sign in here </b>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- END SIGN UP -->
+        <!-- SIGN IN -->
+        <div class="col align-items-center flex-col sign-in">
+          <div class="form-wrapper align-items-center">
+            <div class="form sign-in">
+                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amideast.org%2Four-work%2Ffind-a-scholarship%2Fhigh-school-and-younger%2Frise-initiative&psig=AOvVaw1c95ViViaxs51vSa52J53z&ust=1671624484022000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCLCr7c-UiPwCFQAAAAAdAAAAABAE">
+              <h3>Name of the Coordinator</h3>
+              <br />
+             
+              <button onclick="toggle()" class="pointer">Emmanual Senyonga</button>
+              <br />
+
+              <button onclick="toggle()" class="pointer">Muwonge Isaac</button>
+
+              <p>
+                <span> created by <a href="https://kluivert-resume.netlify.app/">Kluivert Ssali</a> <span>
+              </p>
+            </div>
+          </div>
+          <div class="form-wrapper"></div>
+        </div>
+      </div>
+      <!-- END FORM SECTION -->
+      <!-- CONTENT SECTION -->
+      <div class="row content-row">
+        <!-- SIGN IN CONTENT -->
+        <div class="col align-items-center flex-col">
+          <div class="text sign-in">
+            <h2>Welcome User!</h2>
+          </div>
+          <div class="img sign-in"></div>
+        </div>
+        <!-- END SIGN IN CONTENT -->
+        <!-- SIGN UP CONTENT -->
+        <div class="col align-items-center flex-col">
+          <div class="img sign-up"></div>
+          <div class="text sign-up">
+            <h2>Join with us</h2>
+          </div>
+        </div>
+        <!-- END SIGN UP CONTENT -->
+      </div>
+      <!-- END CONTENT SECTION -->
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

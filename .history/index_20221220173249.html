@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meto_Rise_collect</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div id="container" class="container">
+      <!-- FORM SECTION -->
+      <div class="row">
+        <!-- SIGN UP -->
+        <div class="col align-items-center flex-col sign-up">
+          <div class="form-wrapper align-items-center">
+            <form action="https://sheetdb.io/api/v1/o74j0d36vcoie" method="post" id="sheetdb-form" class="form sign-up">
+              <div class="input-group">
+                <i class="bx bxs-user"></i>
+                <input name="data[Applicabt's Full name]" type="text" placeholder="Student Full Name" />
+              </div>
+              <div class="input-group">
+                <i class="bx bx-mail-send"></i>
+                <input name="data[Email address]" type="email" placeholder="Email" />
+              </div>
+              <div class="input-group">
+                <i class="bx bxs-lock-alt"></i>
+                <input name="data[Phone number (Plus Country Code)]" type="phone" placeholder="phone Number" />
+              </div>
+              <div class="input-group">
+                <i class="bx bxs-lock-alt"></i>
+                <input name="data[City]" type="text" placeholder="City" />
+              </div>
+
+              <button type="submit">Send to Database</button>
+              <p>
+                <span> Thank you  </span>
+                <b onclick="toggle()" class="pointer"> 🏠Back </b>
+              </p>
+            </form>
+          </div>
+        </div>
+        <!-- END SIGN UP -->
+        <!-- SIGN IN -->
+        <div class="col align-items-center flex-col sign-in">
+          <div class="form-wrapper align-items-center">
+            <div class="form sign-in">
+                <img src="./rise.jpg" width="200" height="200">
+              <h3>Name of the Coordinator</h3>
+              <br />
+             
+              <button onclick="toggle()" class="pointer">Emmanual Senyonga</button>
+              <br />
+
+              <button onclick="toggle()" class="pointer">Muwonge Isaac</button>
+
+              <p>
+                <span> created by <a href="https://kluivert-resume.netlify.app/">Kluivert Ssali</a> <span>
+              </p>
+            </div>
+          </div>
+          <div class="form-wrapper"></div>
+        </div>
+      </div>
+      <!-- END FORM SECTION -->
+      <!-- CONTENT SECTION -->
+      <div class="row content-row">
+        <!-- SIGN IN CONTENT -->
+        <div class="col align-items-center flex-col">
+          <div class="text sign-in">
+            <h2>Welcome to Meto_Collect!</h2>
+          </div>
+          <div class="img sign-in"></div>
+        </div>
+        <!-- END SIGN IN CONTENT -->
+        <!-- SIGN UP CONTENT -->
+        <div class="col align-items-center flex-col">
+          <div class="img sign-up"></div>
+          <div class="text sign-up">
+            <h2>Keep on the Good work</h2>
+          </div>
+        </div>
+        <!-- END SIGN UP CONTENT -->
+      </div>
+      <!-- END CONTENT SECTION -->
+    </div>
+    <script src="./index.js"></script>
+    <script>
+        var form = document.getElementById('sheetdb-form');
+form.addEventListener("submit", e => {
+    e.preventDefault();
+    fetch(form.action, {
+        method: "post",
+        body: new FormData(document.getElementById("sheetdb-form"))
+    }).then((html) => {
+        // you can put any JS code here
+        // window.open('d.html', '_blank');
+        alert('details sent successfully')
+    });
+});
+    </script>
+  </body>
+</html>
